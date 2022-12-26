@@ -3,9 +3,9 @@ require_once("config.php");
 
 if(isset($_POST['login'])) {
     $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
-    $PASSWORD = filter_input(INPUT_POST, 'PASSWORD', FILTER_SANITIZE_STRING);
+    $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
-    $SQL = "SELECT * FROM users WHERE username=:username OR email=:email";
+    $sql = "SELECT * FROM users WHERE username=:username OR email=:email";
     $stmt = $db->prepare($sql);
 
     // bind parameter ke query
