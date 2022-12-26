@@ -69,7 +69,11 @@ if(isset($_POST['register'])) {
                     <input class="form-control" type="text" name="password" placeholder="Password" />
             </div>
 
-
-
-                </body> 
+            <input type="submit" class="btn btn-success btn-block" name="register" value="Daftar" />
+            </form>
+            </div class="col-md-6"><img class="img img-responsive" src="img/connect.png" />
+            </div>
+            </div>
+            </div>
+</body> 
 </html>
